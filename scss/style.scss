@@ -1,0 +1,157 @@
+// Main Sass File
+
+//Base Styles
+body{
+  
+  font-size:16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Poppins;
+}
+
+p{
+  font-family: Roboto;
+}
+
+.navbar{
+  background:#fefefe;
+  border:0;
+  font-family: Poppins;
+  height:85px;
+}
+.navbar-brand>img{
+  width:80px;
+  height:80px;
+}
+
+#showcase{
+  padding-top:90px;
+}
+
+#showcase h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+.showcase-left img{
+  width:90%;
+  margin-left:60px;
+}
+
+.showcase-right{
+  margin-top:20px;
+}
+
+#testimonial{
+  background:#f1f1f1;
+  padding:50px 0 30px 0;
+  text-align: center;
+  margin-top:40px;
+}
+
+#testimonial p{
+  font-size: 32px;
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#testimonial p.customer{
+  font-size:25px;
+  color:#666;
+}
+
+#info1 .info-right{
+  margin-top:90px;
+  padding-top:55px;
+}
+
+#info2{
+  margin:20px 0 0 0;
+  padding:40px 0;
+  background:#f1f1f1;
+  .info-left{
+    margin-right:5px;
+  }
+  .info-right{
+    margin-left:5px;   
+  }
+}
+
+ /*-----------------------------------------
+      Form
+    ------------------------------------------*/
+.info-right>form.js-form{  
+      height: 0;
+      margin-bottom: 3rem;
+      opacity: 0;
+      visibility: hidden;     
+}
+
+form.js-form.is-visible {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  /*Adding Animation touch to interactivity*/
+  transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+  label.form-label{
+    display: block;
+    font-weight:bold;
+    margin-bottom: 5px;
+  }
+  
+  #form-link-input.form-input {
+    border: 1px solid #b6b6b6;
+    border-radius: 4px;
+    font-size:15px;
+    padding: 5px;
+    width: 50%;
+    margin-left:20px;
+  }
+
+
+}
+
+#contact{
+  background:url("../img/image3.png"); 
+  padding:120px 0 150px 0;
+
+}
+
+#info3{
+  padding:100px 0;
+  background:#fff;
+  .info-left-btm{
+    margin-right:20px;
+  }
+  .info-right-btm{
+    margin-left:30px;
+    margin-right:-20px;
+  }
+  a.fa{
+    padding:12px;
+    font-size: 30px;
+    color:blueviolet;
+  }
+  a.fa:hover{
+      color:#d5d5d5;
+      text-decoration:none;
+  }
+}
+
+#contact ul{
+  list-style: none;
+}
+
+footer{
+  padding:25px;
+  background:#f1f1f1
+}
+
+/************MEDIA QUERIES*********/
+
+@media (max-width: 800px) {
+	.info-right-btm {
+		margin-top:20px;
+	}
+}
