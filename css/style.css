@@ -18,7 +18,7 @@ p {
   height: 80px; }
 
 #showcase {
-  padding-top: 90px; }
+  padding-top: 120px; }
 
 #showcase h1 {
   font-size: 50px;
@@ -78,13 +78,15 @@ form.js-form.is-visible {
     display: block;
     font-weight: bold;
     margin-bottom: 5px; }
-  form.js-form.is-visible #form-link-input.form-input {
+  form>input.formcontrol {
     border: 1px solid #b6b6b6;
     border-radius: 4px;
     font-size: 15px;
     padding: 5px;
-    width: 50%;
+    width: 75%;
     margin-left: 20px; }
+
+
 
 #contact {
   background: url("../img/image3.png");
@@ -113,7 +115,108 @@ footer {
   padding: 25px;
   background: #f1f1f1; }
 
+
+
 /************MEDIA QUERIES*********/
+@media (max-width:649px){
+
+    #info3 .col-sm-6 .info-left-btm,
+    #info3 .col-sm-6 .info-right-btm{
+      display:block;
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+
+}
+
+
+@media (max-width:767px){
+
+    #testimonial{
+      padding-bottom: 0px;
+    }
+
+    #info1 .bill{
+      margin-top: 0px;
+      margin-bottom:-25px;
+    }
+
+    #info1 .info-right{
+      margin-top:-25px;
+      display:block;
+    }
+
+    #info3 .col-sm-6 .info-right-btm{
+      margin-top:50px;
+    }
+
+    #info3 .col-sm-6 .info-left-btm{
+      margin-left:40px;
+    }
+
+    #info2 h2,
+    #info2 p,
+    #info2 button{
+      margin-top: 25px;
+    }
+
+}
+
+
+
 @media (max-width: 800px) {
-  .info-right-btm {
-    margin-top: 20px; } }
+
+  #info3 .col-sm-6 .info-right-btm{
+    margin-top:10px;
+  }
+  }
+
+
+/*Portrait Mode for Smaller Screen Sizes*/
+@media(min-width: 768px) and (max-width: 999px) {
+          div.showcase-left{
+            margin-top:40px;
+         }
+
+}
+
+@media(max-width:995px){
+
+    #info1 .bill{
+          margin-top: 90px;
+    }
+
+    #info1 .info-right{
+          margin-top:15px;
+          display:block;
+      }
+}
+
+
+@media(min-width: 1000px){
+      #info1 h2,
+      #info1 p,
+      #info1 button{
+        margin-left:35px;
+      }
+
+}
+
+/*Landscape Mode for Smaller Screens*/
+@media(min-width:321px)
+      and (max-width: 568px){
+
+
+      }
+
+
+@media(min-width: 769px){}
+
+@media(min-width: 992px){}
+
+@media(min-width: 1200px){}
+
+
+
